@@ -787,6 +787,9 @@ iframe {
   .container {
     padding: 0 25px;
   }
+  .contact-left form .form {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .contact {
     padding-bottom: 30px;
     padding-top: 30px;
