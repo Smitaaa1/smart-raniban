@@ -1,0 +1,48 @@
+.container {
+  max-width: 120em;
+  margin: auto;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.wrapper {
+  max-width: 95em;
+  background-color: transparent;
+  margin: auto;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.progress {
+  background: #c4c4c4;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 5px;
+}
+.circle {
+  background: #c4c4c4;
+  color: #000;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #c4c4c4;
+}
+.circle.active {
+  border-color: #00b2ff;
+}
+.main-part {
+  height: 500px;
+  width: 100%;
+}
+.end-wrap {
+  background-image: url("register.png");
+  background-size: cover;
+  position: relative;
+}
