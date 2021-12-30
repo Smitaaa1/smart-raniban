@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #000000;
+}
+.container {
+  max-width: 120em;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.wrapper {
+  max-width: 95em;
+  background-color: transparent;
+  margin: auto;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: 80px;
+  width: 80px;
+}
+.bar-part {
+  padding-bottom: 15px;
+}
+.logo-part {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.progress {
+  background: #c4c4c4;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 5px;
+}
+.circle {
+  background: #c4c4c4;
+  color: #7a7a7a;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #c4c4c4;
+}
+.circle.active {
+  border-color: #00b2ff;
+}
+.main {
+  display: flex;
+  gap: 20px;
+}
+.end-wrap {
+  background-image: url("images/register.png");
+  background-size: cover;
+  position: relative;
+  height: 390px;
+}
+.text-part p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #000000;
+}
+.text-part h4 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.center-part {
+  width: 70%;
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  padding-bottom: 1.8rem;
+}
+.form-group1 {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  padding-bottom: 1.8rem;
+  width: 70%;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-field1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.center-part label {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #626262;
+}
+.center-part input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+input {
+  background-color: #dbdbdb;
+  border: none;
+  border-radius: 6px;
+  color: #ffff;
+  outline: none;
+}
+.main-bottom-part input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main-bottom-part label {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #626262;
+}
+.button-part {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.button-part button {
+  background: #00b2ff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  color: #ffff;
+}
+/* media-query */
+
+@media only screen and (max-width: 1025px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 1.8rem;
+  }
+  .form-group1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 1.8rem;
+  }
+}
+@media only screen and (max-width: 521px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 1.8rem;
+  }
+  .form-group1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 1.8rem;
+  }
+  .left-part {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .center-part {
+    width: 100%;
+  }
+  .form-group1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 1.8rem;
+    width: 100%;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 1.8rem;
+  }
+  .input-field1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-group1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 1.8rem;
+    width: 100%;
+  }
+  .left-part img {
+    width: 300px;
+  }
+}
